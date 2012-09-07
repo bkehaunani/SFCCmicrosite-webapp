@@ -32,11 +32,11 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-body { margin: 0; font-size: 13px; line-height: 1.231; background: black;}
+body { margin: 0; font-size: 100%; line-height: 1.231; background: black;}
 
-body, button, input, select, textarea { font-family: sans-serif; color: white; }
+body, button, input, select, textarea { font-family: Arial, Helvetica, Verdana, sans-serif; color: white; }
 
-body { background: url(../img/bottom_bg_repeat.jpg) repeat-x black; background-position: center bottom; }
+body { background-color: black;}
 
 
 
@@ -44,9 +44,9 @@ body { background: url(../img/bottom_bg_repeat.jpg) repeat-x black; background-p
    Links
    ========================================================================== */
 
-a { color: #eb008a; }
-a:visited { color: #eb008a; }
-a:hover { color: #d5de22; }
+a { color: #ed1e79; }
+a:visited { color: #ed1e79; }
+a:hover { color: #8cc63f; }
 a:focus { outline: thin dotted; }
 
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
@@ -217,16 +217,30 @@ td { vertical-align: top; }
 /* ==|== primary styles =====================================================
    Author: Brianna Kirkland
    ========================================================================== */
+   
+#contianer {
+	background: url(../img/bottom_bg_repeat.jpg) repeat-x black; background-position: center bottom; 
+	background-image: linear-gradient(bottom, rgb(69,69,69) 0%, rgb(122,122,122) 5%, rgb(0,0,0) 15%);
+	background-image: -o-linear-gradient(bottom, rgb(69,69,69) 0%, rgb(122,122,122) 5%, rgb(0,0,0) 15%);
+	background-image: -moz-linear-gradient(bottom, rgb(69,69,69) 0%, rgb(122,122,122) 5%, rgb(0,0,0) 15%);
+	background-image: -webkit-linear-gradient(bottom, rgb(69,69,69) 0%, rgb(122,122,122) 5%, rgb(0,0,0) 15%);
+	background-image: -ms-linear-gradient(bottom, rgb(69,69,69) 0%, rgb(122,122,122) 5%, rgb(0,0,0) 15%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgb(69,69,69)),
+		color-stop(0.05, rgb(122,122,122)),
+		color-stop(0.15, rgb(0,0,0))
+	);
 
-/* -----------HEADER--------------------------------------------------------- */
-header.html {
-	background: repeat-x center top url(../img/top_bg_repeat.jpg);
-	height: 296px;
 }
-header.html img{ position: absolute;
-			right: 0;
-			top: 18px;
 
+/* -----------HEADERS-------------------------------------------------------- */
+header {
+	background: repeat-x center top url(../img/top_bg_repeat.jpg);
+	height: 158px;
 }
 h1#logo {
    width: 204px; 
@@ -235,11 +249,72 @@ h1#logo {
    background: url(../img/title.png); 
    text-indent: -9999px;
 }
+#appy{ 
+	position: absolute;
+	right: 0;
+	top: 20px;
+	z-index: 999;
+}
+h2 {
+	font-family: Arial Bold;
+	text-transform: uppercase;
+	font-size: 2.5em;
+}
+/* -----------NAV-------------------------------------------------------------- */
+nav{
+	width: 800px;
+	margin: 10px auto;
+	float: left;
+}
+nav li a {
+	float: left;
+	padding: 15px;
+}
+
+
+/* -----------CIRCLED TEXT----------------------------------------------------- */
+
+#clickHere a {
+	background: url(../img/circle_click.png) no-repeat;
+	width: 548px;
+	height: 126px;
+	margin: 0 auto;
+	display: block;	
+}
+#clickHere a:hover, #clickHere a:active {
+	border: none;
+	text-decoration: none;
+}
+#clickHere p {
+   text-indent: -9999px;
+   margin: 0 auto;
+}
 
 /* -----------MAIN------------------------------------------------------------ */
-#main {
+article {
+	width: 800px;
+	margin: 0 auto;
 	padding: 20px;
+	font-size: 16px;
+	line-height: 24px;
+	
+	border: 1px solid blue;
 }
+/*
+article p {
+	width: 600px;
+	border: 1px solid white;
+}
+*/
+strong {
+	color: #8cc634;
+	font-weight: normal;
+}
+section {
+	clear: both;
+}
+
+
 
 
 
