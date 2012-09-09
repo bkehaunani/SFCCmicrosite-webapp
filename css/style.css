@@ -71,6 +71,10 @@ ins { background: #ff9; color: #000; text-decoration: none; }
 
 mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
 
+strong { color: #8cc634; }
+
+em { color: #8cc634; }
+
 /* Redeclare monospace font family: h5bp.com/j */
 pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
 
@@ -246,12 +250,36 @@ td { vertical-align: top; }
 }
 */
 
-/* -----------HEADERS-------------------------------------------------------- */
-header#main {
-	background: repeat-x center top url(../img/top_bg_repeat.jpg);
-	height: 158px;
+body {
+	background: url(../img/bottom_bg_repeat.jpg) repeat-x black; background-position: center bottom; 
+	background-image: linear-gradient(bottom, rgb(69,69,69) 0%, rgb(0,0,0) 5%);
+	background-image: -o-linear-gradient(bottom, rgb(69,69,69) 0%,  rgb(0,0,0) 5%);
+	background-image: -moz-linear-gradient(bottom, rgb(69,69,69) 0%, rgb(0,0,0) 5%);
+	background-image: -webkit-linear-gradient(bottom, rgb(69,69,69) 0%, rgb(0,0,0) 5%);
+	background-image: -ms-linear-gradient(bottom, rgb(69,69,69) 0%, rgb(0,0,0) 5%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgb(69,69,69)),
+		color-stop(0.05, rgb(0,0,0))
+	);
+
 }
-h1#logo {
+
+}
+
+/* -----------HEADERS-------------------------------------------------------- */
+
+#container {
+	background: url(../img/top_bg_repeat.jpg);
+	background-repeat: repeat-x;
+	background-position: center top;
+	/* height: 158px; */
+}
+
+#logo {
    width: 204px; 
    height: 50px; 
    margin: 20px 0 0 20px;
@@ -301,9 +329,11 @@ nav li a {
 
 /* -----------MAIN------------------------------------------------------------ */
 
-strong {
-	color: #8cc634;
-	font-weight: normal;
+section {
+	clear: both;
+}
+footer {
+	margin-bottom: 5%;
 }
 
 
@@ -314,6 +344,16 @@ strong {
 
 
 
+
+/* -----------SURVEY STYLES----------------------------------------------------- */
+.ui-btn-float-right {
+	float: right;
+	margin: 3px 15px;
+}
+.ui-btn-float-left {
+	float: left;
+	margin: 3px 15px;
+}
 
 
 
