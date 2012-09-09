@@ -218,7 +218,15 @@ td { vertical-align: top; }
    Author: Brianna Kirkland
    ========================================================================== */
    
+/*
 #contianer {
+	width: 700px;
+ 	margin: 0 auto; 
+	padding: 20px;
+	font-size: 16px;
+	line-height: 24px;
+	border: 1px solid white;
+	
 	background: url(../img/bottom_bg_repeat.jpg) repeat-x black; background-position: center bottom; 
 	background-image: linear-gradient(bottom, rgb(69,69,69) 0%, rgb(122,122,122) 5%, rgb(0,0,0) 15%);
 	background-image: -o-linear-gradient(bottom, rgb(69,69,69) 0%, rgb(122,122,122) 5%, rgb(0,0,0) 15%);
@@ -236,6 +244,7 @@ td { vertical-align: top; }
 	);
 
 }
+*/
 
 /* -----------HEADERS-------------------------------------------------------- */
 header#main {
@@ -256,7 +265,7 @@ h1#logo {
 	z-index: 999;
 }
 h2 {
-	font-family: Arial Bold;
+	font-family: 'ArchitectsDaughter', 'Arial Black', Arial, Helvetica, Verdana, sans-serif;
 	text-transform: uppercase;
 	font-size: 2.5em;
 }
@@ -291,28 +300,12 @@ nav li a {
 }
 
 /* -----------MAIN------------------------------------------------------------ */
-article {
-	width: 800px;
-	margin: 0 auto;
-	padding: 20px;
-	font-size: 16px;
-	line-height: 24px;
-	
-	border: 1px solid blue;
-}
-/*
-article p {
-	width: 600px;
-	border: 1px solid white;
-}
-*/
+
 strong {
 	color: #8cc634;
 	font-weight: normal;
 }
-section {
-	clear: both;
-}
+
 
 
 
