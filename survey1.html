@@ -10,6 +10,7 @@
 		
 		<title>SFCC Appy Survey</title>
 		
+		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="themes/SFCCappy.min.css" />
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile.structure-1.1.1.min.css" />
 		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
@@ -43,16 +44,16 @@
 			
 			<p>Congrats! You app savvy citizen, you. You're just four quick questions away from being entered to win an iPad!</p>
 		</div>	
-		<footer data-role="footer" data-position="fixed" class="ui-grid-a">
-		<a href="index.html" data-role="button" data-mini="true" data-icon="arrow-l" class="ui-block-a" data-transition="slidefade">Home</a>
-		<a href="#quest1" data-role="button" data-mini="true" data-icon="arrow-r" data-iconpos="right" class="ui-block-b" data-transition="slidefade">Start Survey</a>
+		<footer data-role="footer" data-position="fixed" data-id="surveyFooter">
+		<a href="index.html" class="ui-btn-left" data-role="button" data-mini="true" data-icon="arrow-l" data-transition="slidefade">Home</a>
+		<a href="#quest1" class="ui-btn-right" data-role="button" data-mini="true" data-icon="arrow-r" data-iconpos="right" data-transition="slidefade">Start Survey</a>
 		</footer>
 	</section>
 	
 	
 	
 	<section id="quest1" data-role="page">
-		<header data-role="header"><h1>SFCC App Survey</h1></header>
+		<header data-role="header"data-position="fixed"><h1>SFCC App Survey</h1></header>
 		<div data-role="content"  data-theme="a">
 		
 		<form>
@@ -139,9 +140,9 @@
 		</div><!--data role content-->
 		
 		
-		<footer data-role="footer" data-position="fixed" class="ui-grid-a">
-		<a href="index.html" data-role="button" data-mini="true" data-icon="arrow-l" class="ui-block-a" data-transition="slidefade">Home</a>
-		<a href="#outro" data-role="button" data-mini="true" data-icon="arrow-r" data-iconpos="right" class="ui-block-b" data-transition="slidefade">Next</a>
+		<footer data-role="footer" data-position="fixed" data-id="surveyFooter">
+		<a href="index.html" class="ui-btn-left" data-role="button" data-mini="true" data-icon="arrow-l" data-transition="slidefade">Home</a>
+		<a href="#outro" class="ui-btn-right" data-role="button" data-mini="true" data-icon="arrow-r" data-iconpos="right" data-transition="slidefade">Next</a>
 		</footer>
 
 	</section>
@@ -149,7 +150,7 @@
 	
 	
 	<section id="outro" data-role="page">
-		<header data-role="header"><h1>SFCC App Survey</h1></header>
+		<header data-role="header" data-position="fixed"><h1>SFCC App Survey</h1></header>
 		<div data-role="content" data-theme="a">
 			<p><em>POW! BLAM! THWACK!</em> YOU'RE DONE.</p>
 			<p><span class="mobileOnly">And you've just been entered to win a brand new iPad!</span></p>
@@ -157,9 +158,9 @@
 
 		</div>
 		
-		<footer data-role="footer" data-position="fixed" class="ui-grid-a">
-		<a href="index.html" data-role="button" data-mini="true" data-icon="arrow-l" class="ui-block-a" data-transition="slidefade">Home</a>
-		<a href="#outro" data-role="button" data-mini="true" data-icon="arrow-r" data-iconpos="right" class="ui-block-b" data-transition="slidefade">Next</a>
+		<footer data-role="footer" data-position="fixed" data-id="surveyFooter">
+		<a href="index.html" class="ui-btn-left" data-role="button" data-mini="true" data-icon="arrow-l" data-transition="slidefade">Home</a>
+		
 		</footer>
 
 	</section>

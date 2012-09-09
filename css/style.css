@@ -238,7 +238,7 @@ td { vertical-align: top; }
 }
 
 /* -----------HEADERS-------------------------------------------------------- */
-header {
+header#main {
 	background: repeat-x center top url(../img/top_bg_repeat.jpg);
 	height: 158px;
 }
