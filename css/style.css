@@ -268,7 +268,6 @@ body {
 
 }
 
-}
 
 /* -----------HEADERS-------------------------------------------------------- */
 
@@ -276,7 +275,6 @@ body {
 	background: url(../img/top_bg_repeat.jpg);
 	background-repeat: repeat-x;
 	background-position: center top;
-	/* height: 158px; */
 }
 
 #logo {
@@ -300,12 +298,12 @@ h2 {
 /* -----------NAV-------------------------------------------------------------- */
 nav{
 	width: 800px;
-	margin: 10px auto;
+	margin: 0 auto;
 	float: left;
 }
 nav li a {
 	float: left;
-	padding: 15px;
+	padding: 3px;
 }
 
 
@@ -328,9 +326,16 @@ nav li a {
 }
 
 /* -----------MAIN------------------------------------------------------------ */
-
+article {
+	width: 700px;
+ 	margin: 115px auto 0 auto; 
+	font-size: 16px;
+	line-height: 24px;
+	/* border: 1px solid white; */
+}
 section {
 	clear: both;
+	padding: 20px;
 }
 footer {
 	margin-bottom: 5%;
