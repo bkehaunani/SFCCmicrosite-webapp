@@ -4,7 +4,7 @@ $(document).ready(function() {
   // See http://modernizr.github.com/Modernizr/touch.html
   if (Modernizr.touch){
      // change url of any link with the survey_link class to mobile
-     $("a.survey_link").attr("href", "survey.html");
+     $("a.survey_link").attr("href", "survey1.html");
   } else {
      // change any survey_link class URL to desktop
      $("a.survey_link").attr("href", "survey2.html");
