@@ -71,7 +71,7 @@ ins { background: #ff9; color: #000; text-decoration: none; }
 
 mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
 
-strong { color: #8cc634; }
+strong { color: #d5de22; }
 
 em { color: white; }
 
@@ -313,15 +313,15 @@ section {
 	clear: both;
 	padding: 20px;
 }
-footer {
-	margin: 15px;
+footer p{
+	margin: 0;
 	padding: 10px;
 	font-size: 10px;
 	color: black;
 }
 footer img {
 	float: left;
-	margin-right: 15px;
+	margin: 0 15px 15px 15px;
 }
 footer em {
 	color: black;
@@ -329,7 +329,8 @@ footer em {
 
 /* -----------EXTRA BG IMAGES--------------------------------------------------- */
 #prizes {
-	background-image: url(img/iPad.png);
+	height: 223px;
+	background-image: url(img/ipad.png);
 	background-repeat: no-repeat;
 	background-position: right bottom;
 }
