@@ -14,7 +14,7 @@
  <!--  Mobile viewport optimized: h5bp.com/viewport  -->
  <meta name="HandheldFriendly" content="True">
  <meta name="MobileOptimized" content="320">
- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
  <meta name="apple-mobile-web-app-capable" content="yes">
  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
  
@@ -22,9 +22,20 @@
   <link rel="address bar icon" href="favicon.ico" />
   <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
   
+  <!-- Home screen icon  Mathias Bynens mathiasbynens.be/notes/touch-icons -->
+  <!-- For iPhone 4 with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+  <!-- For first-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+  <!-- For nokia devices: -->
+  <link rel="shortcut icon" href="img/l/apple-touch-icon.png">
+  
+  <!-- Stylesheets and Scripts -->
   <link rel="stylesheet" href="css/style.css">
   
-  <script src="js/vendor/modernizr-2.5.3.min.js"></script>
+  <!-- <script src="js/vendor/modernizr-2.5.3.min.js"></script> -->
   
 </head>
 
@@ -74,7 +85,7 @@
     	<section id="prizes"> 
     	
     	<h2>What can I win?</h2>
-    	<p>Keep reading for full contest rules on how you can win:</p>
+    	<p>Keep reading for full contest rules on how you can win:<img src="img/ipad.png" alt="Image of an iPad" class="right"></p>
     	<ul>
     		<li>A FREE iPAD!</li>
     		<li>A FREE iPOD!</li>
@@ -89,7 +100,7 @@
     	    	
     	<h2>How do I enter?</h2>
     	<ul>
-    	<li>Take the survey with your mobile device to be entered to win the <strong>iPAD.</strong> If you're viewing this site in your browser, go pull it up on your phone now!</li>
+    	<li>Take the survey with your mobile device to be entered to win the <strong>iPAD.</strong> If you're viewing this site in your desktop browser, go pull it up on your phone now!</li>
     	
     	<li>Don't have a smartphone or tablet? Don't worry. Take the survey from this site, and be entered to win an <strong>iTunes gift card.</strong></li>
     	
@@ -102,12 +113,13 @@
     	<section id="connect">
     	    	
     	<h2>Get social with us!</h2>
-		<p><a href="http://www.facebook.com/SFCCappy" target="_blank" title="Appetite for Instruction Facebook Page"><img src="img/fb-like.png" alt="Facebook 'Like' Icon">
-		Like</a> our Facebook <em>Appetite for Instruction</em> Page,<br> and share your:
+    	<p class="right"><a href="http://www.facebook.com/SFCCappy" target="_blank" title="Appetite for Instruction Facebook Page"><img src="img/fb.jpg" alt="Image of Facebook Icon"></a></p>
+		<p><a href="http://www.facebook.com/SFCCappy" target="_blank" title="Appetite for Instruction Facebook Page"><img src="img/fb-like.png" alt="Facebook 'Like' Icon" class="left">Like</a> our Facebook <em>Appetite for Instruction</em> Page, and share your:</p>
+		
 		<ul>
 		<li><em>Appetite for Instruction</em> button rockin'est photos</li>
 		<li>Get app savvy with cool app facts, articles and info.</li>
-		<li>And this is where it gets even more fun: post your mobile phone shot videos of "Top 3 Reasons I want an SFCC Student App."</li>
+		<li>And <strong>this is where it gets even more fun:</strong> post your mobile phone shot videos of "Top 3 Reasons I want an SFCC Student App."</li>
 		</ul>
 		
 		<p>Shoot yourself, your fellow students, make artsy short films or straight up give us your pre-Halloween goofy side BUT THE BEST VIDEO WINS A FREE <strong>iPOD!</strong> <em>Videos must be submitted by October 15th.</em></p>
@@ -133,6 +145,10 @@
   </div> <!--! end of #container -->
   
    <!-- JavaScript at the bottom for fast page loading: http://developer.yahoo.com/performance/rules.html#js_bottom -->
+
+   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
 
  
   <!-- scripts concatenated and minified via build script -->
