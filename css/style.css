@@ -71,7 +71,7 @@ ins { background: #ff9; color: #000; text-decoration: none; }
 
 mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
 
-strong { color: #d5de22; }
+strong { color: #C0D95B; }
 
 em { color: white; }
 
@@ -419,7 +419,10 @@ article {
 	width: 274px;
 	height: 63px;
 	}
-
+#about h2 {
+	height: 115px;
+	background: url(../img/circle_about.png) top center no-repeat;
+}
 
 }
 
