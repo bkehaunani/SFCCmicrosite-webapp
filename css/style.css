@@ -262,6 +262,9 @@ body {
 	top: 20px;
 	z-index: 999;
 }
+#appyMobile {
+	display: none;
+}
 h2 {
 	font-family: 'ArchitectsDaughter', 'Arial Black', Arial, Helvetica, Verdana, sans-serif;
 	text-transform: uppercase;
@@ -348,8 +351,12 @@ footer em {
 	background-position-x: right;
 	background-position-y: bottom;
 	background-repeat: no-repeat;
-
 }
+/*
+#prizes p, #prizes ul {
+	width: 70%;
+}
+*/
 
 #connect {
 	background-image: url(../img/fb.png);
@@ -357,7 +364,11 @@ footer em {
 	background-position-y: 20%;
 	background-repeat: no-repeat;
 }
-
+/*
+#connect p:first-child, #connect ul {
+	width: 80%;
+}
+*/
 
 
 
@@ -398,31 +409,69 @@ and (max-device-width : 480px) {
    background: url(../img/title.png); 
    text-indent: -9999px;
 }
-#appyAlt {
-	background: url(../appy.png) top right;
-	width: 104px;
-	height: 100px;
-}
 #appy { 
 	display: none;
 	}
+#appyMobile {
+	display: block;
+	width: 104px;
+	height: 100px;
+	position: absolute;
+	top: 180px;
+	left: 100px;
+	}
 nav {
 	display: none;
+	}
+h2 {
+	font-size: 1.4em;
+	line-height: 1.2em;
 	}
 article {
 	width: 100%;
 	font-size: 1.2em;
 	line-height: 1.5em;
+	margin-top: 200px;
 	}
 #clickHere a {
 	background: url(../img/circle_mobile.png) no-repeat;
 	width: 274px;
 	height: 63px;
 	}
+/*
 #about h2 {
-	height: 115px;
+
 	background: url(../img/circle_about.png) top center no-repeat;
-}
+
+	background-position: center -83px;
+	}
+#rules {
+	
+	}
+
+#prizes {
+	background: url(../img/ipad_mobile.png);
+	background-position-x: right;
+	background-position-y: bottom;
+	background-repeat: no-repeat;
+	}
+#prizes p, #prizes ul {
+	width: 70%;
+	}
+#connect {
+	background: url(../img/fb_mobile.png);
+	background-position-x: right;
+	background-position-y: 20%;
+	background-repeat: no-repeat;
+	}
+#connect p:first-child, #connect ul {
+	width: 450px;
+	}*/
+#prizes, #connect {background: none; width:100%;}
+/* #prizes p, #prizes ul, #connect p, #connect ul {width:100%;} */
+#footer p {
+	clear: left;
+	}
 
 }
 
