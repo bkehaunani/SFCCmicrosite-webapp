@@ -266,11 +266,11 @@ h2 {
 	font-family: 'ArchitectsDaughter', 'Arial Black', Arial, Helvetica, Verdana, sans-serif;
 	text-transform: uppercase;
 	font-size: 2.5em;
-	line-height: 2.8em;
+	/* line-height: 2.8em; */
 }
 /* -----------NAV-------------------------------------------------------------- */
 nav{
-	width: 800px;
+	width: 700px;
 	margin: 0 auto;
 	float: left;
 }
@@ -314,6 +314,13 @@ section {
 	clear: both;
 	padding: 20px;
 }
+#connect img {
+	float: left;
+	margin-right: 10px;
+}
+#connect ul {
+	clear: both;
+}
 footer p{
 	margin: 0;
 	padding: 10px;
@@ -329,21 +336,20 @@ footer em {
 }
 
 /* -----------EXTRA BG IMAGES--------------------------------------------------- */
-#prizes {
-	height: 223px;
+#prizes{
 	background-image: url(../img/ipad.png);
 	background-repeat: no-repeat;
-	background-position: right bottom;
-}
-#prizes h2 {
-	background: url(../img/arrow.png) top right no-repeat;
+	background-position-x: right;
+	background-position-y: 20%;
 }
 
-#connect p:first-child {
+#connect {
 	background-image: url(../img/fb.png);
-	background-position: right top;
+	background-position-x: right;
+	background-position-y: 20%;
 	background-repeat: no-repeat;
 }
+
 
 
 
@@ -380,12 +386,14 @@ and (max-device-width : 480px) {
 #logo {
    width: 204px; 
    height: 50px; 
-   margin: 8px 0 0 8px;
+   margin: auto 8px;
    background: url(../img/title.png); 
    text-indent: -9999px;
 }
 #appyAlt {
 	background: url(../appy.png) top right;
+	width: 104px;
+	height: 100px;
 }
 #appy { 
 	display: none;
