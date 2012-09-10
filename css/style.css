@@ -268,6 +268,12 @@ h2 {
 	font-size: 2.5em;
 	/* line-height: 2.8em; */
 }
+#fbLikeUs {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	z-index: 9999;
+}
 /* -----------NAV-------------------------------------------------------------- */
 nav{
 	width: 700px;
@@ -336,11 +342,13 @@ footer em {
 }
 
 /* -----------EXTRA BG IMAGES--------------------------------------------------- */
-#prizes{
+#prizes {
+	height: 270px;
 	background-image: url(../img/ipad.png);
-	background-repeat: no-repeat;
 	background-position-x: right;
-	background-position-y: 20%;
+	background-position-y: bottom;
+	background-repeat: no-repeat;
+
 }
 
 #connect {
