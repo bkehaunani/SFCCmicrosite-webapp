@@ -56,7 +56,12 @@
 		<header data-role="header"data-position="fixed"><h1>SFCC App Survey</h1></header>
 		<div data-role="content"  data-theme="a">
 		
-		<form>
+		<form method="post" action="">
+		<input type="hidden" name="f"        value="eebform">
+		<input type="hidden" name="to"       value="brianna.kirkland@sfcc.edu">
+		<input type="hidden" name="required" value="aNumber">
+		<input type="hidden" name="success"  value="POW! BLAM! THWACK! You're Done! And you've just been entered to win a brand new iPad!THANKS FOR PARTICIPATING!">
+		
 			<div data-role="field-contain">
 			<fieldset data-role="controlgroup">
 			<label for="aNumber">Enter your "A" number:</label>
@@ -141,31 +146,22 @@
 		
 		
 		<footer data-role="footer" data-position="fixed" data-id="surveyFooter">
-		<a href="index.html" class="ui-btn-float-left" data-role="button" data-mini="true" data-icon="arrow-l" data-transition="slidefade">Home</a>
-		<a href="#outro" class="ui-btn-float-right" data-role="button" data-mini="true" data-icon="arrow-r" data-iconpos="right" data-transition="slidefade">Next</a>
-		</footer>
-
-	</section>
-	
-	
-	
-	<section id="outro" data-role="page">
-		<header data-role="header" data-position="fixed"><h1>SFCC App Survey</h1></header>
-		<div data-role="content" data-theme="a">
-			<p><em>POW! BLAM! THWACK!</em> YOU'RE DONE.</p>
-			<p><span class="mobileOnly">And you've just been entered to win a brand new iPad!</span></p>
-			<h3>THANKS FOR PARTICIPATING!</h3>
-
-		</div>
-		
-		<footer data-role="footer" data-position="fixed" data-id="surveyFooter">
-		<a href="index.html" class="ui-btn-float-left" data-role="button" data-mini="true" data-icon="arrow-l" data-transition="slidefade">Home</a>
 		
 		</footer>
 
 	</section>
 	
 	
+
+	
+<!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+       mathiasbynens.be/notes/async-analytics-snippet -->
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagid(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>	
 	
 </body>
 </html>
