@@ -1,0 +1,182 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+
+  <title>SFCC Appy Survey</title>
+  <meta id="description" content="Welcome to SFCCappy! This is all about making your voice heard to determine if you, the SFCC student body, want and will use a mobile app created JUST. FOR. YOU.">
+  
+ <!--  Mobile viewport optimized: h5bp.com/viewport  -->
+ <meta name="HandheldFriendly" content="True">
+ <meta name="MobileOptimized" content="320">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+ 
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+  <link rel="address bar icon" href="favicon.ico" />
+  <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+  
+  <!-- Home screen icon  Mathias Bynens mathiasbynens.be/notes/touch-icons -->
+  <!-- For iPhone 4 with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+  <!-- For first-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+  <!-- For nokia devices: -->
+  <link rel="shortcut icon" href="img/l/apple-touch-icon.png">
+  
+  <!-- Stylesheets and Scripts -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- <script src="js/vendor/modernizr-2.5.3.min.js"></script> -->
+  
+</head>
+
+
+<body>
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+  
+
+    <div id="container">
+    <header>
+        <h1 id="logo">Appetite for Instruction</h1>
+        <div id="appyAlt">
+	        <a href="http://www.facebook.com/SFCCappy" target="_blank" title="Appetite for Instruction Facebook Page">
+	        	<img src="img/fb-likeus.png" alt="Like Us on Facebook" id="fbLikeUs"></a>
+	        <img src="img/appy_logo.png" alt="Image of 'Appy'" id="appy">
+	        <img src="img/appy.png" alt="Image of 'Appy'" id="appyMobile">
+        </div>
+    </header>
+           
+    	<article>
+    	
+    	<h2>SFCC App Survey</h2>
+    	
+    	<p>Congrats! You app savvy citizen, you. You're just four quick questions away from being entered to win an iTunes Gift Certificate!</p>
+    	
+    	<form class="desktop">
+			<div class="desktop">
+			<fieldset>
+			<label for="aNumber">Enter your "A" number:</label>
+			<input type="text" name="aNumber" id="aNumber" placeholder="A00012345" required />
+			</fieldset>
+			</div>
+
+			<div class="desktop">
+			<fieldset>
+			<legend>Do you own/use a smartphone that runs mobile apps?</legend>
+			<label for=smartphoneY>Yes</label>
+			<input type="radio" name="smartphone" id="smartphoneY" value="yes">
+			<label for=smartphoneN>No</label>
+			<input type="radio" name="smartphone" id="smartphoneN" value="no">
+			</fieldset>
+			</div>
+		
+		
+			<div class="desktop">
+			<fieldset>
+			<legend>If you had an SFCC student app designed for you as a communications tool with the college, would you use it?</legend>
+			<label for=useItY>Yes</label>
+			<input type="radio" name="useIt" id="useItY" value="yes">
+			<label for=useItN>No</label>
+			<input type="radio" name="useIt" id="useItN" value="no">
+			</fieldset>
+			</div>
+		
+		
+			<div class="desktop">
+			<fieldset>
+			<legend>How often do you use your mobile device to find information you need?</legend>
+			<select id="range" name="howOften">
+				<option value="never">Never</option>
+				<option value="rarely">Rarely</option>
+				<option value="occasionally" selected="selected">Occasionally</option>
+				<option value="frequently">Frequently</option>
+				<option value="everyDay">Every Day</option>
+			</select>
+			</fieldset>
+			</div>
+		
+		
+			<div class="desktop">
+			<fieldset>
+			<legend >Which of the following features would you find most useful in a SFCC student app?</legend>
+			<label for="feature1">Course Schedules</label>
+			<input type="checkbox" id="feature1" name="features" value="schedules">
+			<label for="feature2">Grades</label>
+			<input type="checkbox" id="feature2" name="features" value="grades">
+			<label for="feature3">News/Events</label>
+			<input type="checkbox" id="feature3" name="features" value="newsEvents">
+			<label for="feature4">Campus Maps/Tour</label>
+			<input type="checkbox" id="feature4" name="features" value="mapTour">
+			<label for="feature5">Closure Notifications</label>
+			<input type="checkbox" id="feature5" name="features" value="notifications">
+			<label for="feature6">Payment Deadlines</label>
+			<input type="checkbox" id="feature6" name="features" value="deadlines">
+			<label for="feature7">Ride Share Info</label>
+			<input type="checkbox" id="feature7" name="features" value="rideShare">
+			<label for="feature8">Social Media Integration</label>
+			<input type="checkbox" id="feature8" name="features" value="social">
+			</fieldset>
+			</div>
+	
+		
+			<div class="desktop">
+			<fieldset>
+			<legend>Anything you'd like to add?</legend>
+			<textarea name="comments" id="commentBox"></textarea>
+			</fieldset>
+			</div>
+			
+			<div class="desktop">
+			<fieldset >
+				<input type="reset" value="Reset Form">
+				<input type="submit" value="Submit Survey">
+			</fieldset>
+			</div>
+		</form>	
+    	    	
+    	</article>
+
+    <footer>
+    	<img src="img/sfcc-logo.png" alt="SFCC Logo">
+	    <p><em>Appetite for Instruction</em> is an SFCC Office of Information Technology initiative, developed in collaboration with the Marketing Department, and with support from the Office of Student Development. Special thanks to The GROW Foundation for furnishing the iPad.</p>
+	    <p>All submissions and ideas collected from the survey will be considered for inclusion in any possible SFCC App developed. Not every idea or feature will be able to make it Version 1 of the SFCC App. Thanks for participating!</p>
+    </footer>
+    
+  </div> <!--! end of #container -->
+  
+   <!-- JavaScript at the bottom for fast page loading: http://developer.yahoo.com/performance/rules.html#js_bottom -->
+
+   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
+
+ 
+  <!-- scripts concatenated and minified via build script -->
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <!-- end scripts -->
+
+  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+       mathiasbynens.be/notes/async-analytics-snippet -->
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagid(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+
+  
+</body>
+</html>
